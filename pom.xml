@@ -2,6 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- 把打包形式从jar改为war -->
+    <packaging>war</packaging>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -92,6 +96,10 @@
             </plugin>
 
         </plugins>
+
+        <!-- 设置war包名等于项目名。也可以自定义名字，如ssss-->
+        <finalName>${artifactId}</finalName>
+
     </build>
 
 </project>
