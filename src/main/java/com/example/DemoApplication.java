@@ -12,7 +12,6 @@ import org.springframework.cache.annotation.EnableCaching;
 @EnableCaching
 public class DemoApplication extends SpringBootServletInitializer {
 
-    //
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(DemoApplication.class);
