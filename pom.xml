@@ -83,7 +83,7 @@
                 <!--</execution>-->
                 <!--</executions>-->
                 <configuration>
-                    <imageName>coding_to_ding_ding_api:latest</imageName>
+                    <imageName>sj_demo:latest</imageName>
                     <dockerDirectory>${project.basedir}</dockerDirectory>
                     <resources>
                         <resource>
