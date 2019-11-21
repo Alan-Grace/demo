@@ -41,14 +41,6 @@ public class DemoApplicationTests {
     @Test
     public void contextLoads() {
 
-        // 保存字符串
-        stringRedisTemplate.opsForValue().set("aaa", "111");
-        String s = stringRedisTemplate.opsForValue().get("aaa");
-        var s1 = stringRedisTemplate.opsForValue().get("users");
-        var s2 = stringRedisTemplate.opsForValue().get("users:users");
-        var s3 = redisTemplate.opsForValue().get("users");
-        System.out.println(1);
-
     }
 
     @Test
@@ -64,6 +56,8 @@ public class DemoApplicationTests {
 
     @Test
     public void test2() {
+        String []arr=new String[5];
+        System.out.println(1);
 
 
 
